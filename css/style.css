@@ -58,6 +58,10 @@ nav {
     cursor: pointer;
 }
 
+.ms-avatar {
+    border-radius: 50%;
+}
+
 /* /HEADER */
 
 /* MAIN */

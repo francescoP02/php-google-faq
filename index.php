@@ -118,9 +118,12 @@ error_reporting(E_ALL);
 <!-- HEADER -->
 
 <header>
-    <div class="ms-header_top d-flex">
+    <div class="ms-header_top d-flex my-2">
         <img src="img/logo.jpg" alt="">
-        <span class="ms-icon d-flex"><i class="fas fa-th"></i></span>
+        <div class="d-flex">
+            <span class="ms-icon d-flex"><i class="fas fa-th"></i></span>
+            <span><img class="ms-avatar" src="img/me.jpg" alt=""></span>
+        </div>
     </div>
     <nav class="clearfix">
       <!-- menu -->
