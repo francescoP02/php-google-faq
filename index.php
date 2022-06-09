@@ -18,7 +18,17 @@ error_reporting(E_ALL);
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/style.cssstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- FONTAWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -105,18 +115,50 @@ error_reporting(E_ALL);
     ];
 ?>
 
-<div class="container">
+<!-- HEADER -->
 
-    <ul>
-        <?php foreach($faq as $value) { ?>
+<header>
+    <div class="ms-header_top d-flex">
+        <img src="img/logo.jpg" alt="">
+        <span class="ms-icon d-flex"><i class="fas fa-th"></i></span>
+    </div>
+    <nav class="clearfix">
+      <!-- menu -->
+      <div class="col">
+        <ul class="header-menu">
+          <li>Introduzione</li>
+          <li>Norme sulla Privacy</li>
+          <li>Termini di servizio</li>
+          <li>Tecnologie</li>
+          <li>Domande Frequenti</li>
+        </ul>
+      </div>
+    </nav>
+</header>
 
-            <li><?php echo "<h2>" . $value["title"] . "</h2>" ?></li>
-            <li><?php echo "<p>" . $value["text"] . "</p>" ?></li>
+<!-- /HEADER -->
 
-        <?php } ?>
-    </ul>
 
-</div>
+<!-- MAIN -->
+
+<main>
+
+    <div class="container">
+
+        <ul class="ms-faq">
+            <?php foreach($faq as $value) { ?>
+
+                <li><?php echo "<h2>" . $value["title"] . "</h2>" ?></li>
+                <li><?php echo "<p>" . $value["text"] . "</p>" ?></li>
+
+            <?php } ?>
+        </ul>
+
+    </div>
+
+</main>
+
+<!-- /MAIN -->
 
     
 </body>

@@ -1,0 +1,87 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid grey;
+}
+
+.ms-header_top {
+    height: 50px;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+
+img {
+    height: 100%;
+    padding: .4rem 0 .4rem 0;
+    cursor: pointer;
+}
+
+nav {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.header-menu {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+.header-menu > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    margin: 0 0.4em;
+    color: #696c71;
+    font-size: 1rem;
+}
+  
+.header-menu > li:hover {
+    color: #0061ff;
+    border-bottom: 2px solid #0061ff;
+    cursor: pointer;
+}
+
+.ms-icon {
+    padding-right: 2rem;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* /HEADER */
+
+/* MAIN */
+
+main {
+    padding-top: 100px;
+}
+
+.container {
+    width: 65%;
+}
+
+.ms-faq {
+    list-style: none;
+    padding-left: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 3rem 0 1rem;
+}
+  
+p {
+    font-size: 0.9rem
+}
+
+/* /MAIN */
